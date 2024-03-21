@@ -1,39 +1,65 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+# ST Bottom Sheet Button
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+A Flutter package that provides a simple and customizable button to open a bottom modal sheet. Ideal for quick interactions where the user needs to select or view additional information without leaving the current context.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- Easy to integrate with just a few lines of code.
+- Highly customizable button and modal sheet appearance.
+- Supports custom widgets in the modal sheet.
+- Configurable modal sheet size and behavior.
 
-## Getting started
+## Getting Started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+To use this package, add `st_bottom_sheet_button` as a dependency in your `pubspec.yaml` file.
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+Import the package in your Flutter application:
 
-```dart
-const like = 'sample';
+```
+import 'package:st_bottom_modal_sheet/st_bottom_modal_sheet.dart';
+
 ```
 
-## Additional information
+Then Use:
+```
+STBottomSheetButton(
+          sheetBackgroundColor: Colors.white,
+          contentHeight: 150,
+          content: Column(
+            children: [
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: const Text("Logout from this Device"),
+                ),
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {},
+                  child: const Text("Logout from all devices"),
+                ),
+              ),
+            ],
+          ),
+          child: const Text(
+            "Logout",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
+        );
+```
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Screenshots
+![screenshot1.jpeg](https://freeimage.host/i/JXDU6ss)
+
+## Contributing
+
+Contributions are welcome! If you find a bug or have a feature request, please open an issue on our GitHub repository.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.

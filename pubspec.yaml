@@ -1,7 +1,7 @@
-name: st_bottom_modal_sheet
+name: st_bottom_sheet_button
 description: "A new Flutter package project."
 version: 0.0.1
-homepage:
+homepage: "https://github.com/yaseeen96/st_bottom_modal_sheet"
 
 environment:
   sdk: '>=3.3.0 <4.0.0'

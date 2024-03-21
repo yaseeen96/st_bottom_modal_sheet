@@ -10,11 +10,49 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-            child: STBottomModalSheet(
-          child: Text("hello"),
+            child: STBottomSheetButton(
+          sheetBackgroundColor: Colors.white,
+          contentHeight: 150,
+          content: Column(
+            children: [
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    backgroundColor: Colors.red,
+                    foregroundColor: Colors.white,
+                  ),
+                  onPressed: () {},
+                  child: const Text("Logout from this Device"),
+                ),
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
+                  ),
+                  onPressed: () {},
+                  child: const Text("Logout from all devices"),
+                ),
+              ),
+            ],
+          ),
+          child: const Text(
+            "Logout",
+            style: TextStyle(color: Colors.white, fontSize: 20),
+          ),
         )),
       ),
     );
