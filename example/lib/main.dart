@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:st_bottom_modal_sheet/st_bottom_modal_sheet.dart';
+import 'package:st_bottom_modal_sheet/st_bottom_sheet_button.dart';
 
 void main() {
   runApp(const MainApp());
