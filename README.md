@@ -55,6 +55,7 @@ STBottomSheetButton(
 
 ## Screenshots
 ![screenshot1.jpeg](https://i.ibb.co/tcRwm7h/st-button.jpg)
+![screenshot2.jpeg](screenshot.jpeg)
 
 ## Contributing
 
