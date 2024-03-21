@@ -1,5 +1,5 @@
 name: st_bottom_sheet_button
-description: "A new Flutter package project."
+description: "A Flutter package that provides a simple and customizable button to open a bottom modal sheet."
 version: 1.0.0
 homepage: "https://github.com/yaseeen96/st_bottom_modal_sheet"
 
